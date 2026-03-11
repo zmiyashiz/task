@@ -24,9 +24,9 @@ while True:
             lines = file.readlines()
 
             for line in lines:
-                name = line.split()[0]
+                eq = line.strip().split(",")[0]
 
-                if name == v:
+                if eq == v:
                     updated_data.append(f"{c +","+ age}\n")
                 else:
                     updated_data.append(line)
@@ -50,5 +50,3 @@ while True:
 
     elif a == 5:
         break
-
-
